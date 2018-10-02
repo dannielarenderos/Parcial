@@ -1,0 +1,208 @@
+
+ :root {
+    box-sizing: inherit;
+    font-size: 1em;
+}
+
+
+
+header{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 90vh;
+    background: url(img/concierto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+     font-family:'Monoton', cursive;
+
+}
+
+.navHeader{
+    background-color: #000000;
+    color: whitesmoke;
+    margin-top: 1em;
+    width: 100%;
+}
+
+
+.navHeader ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+.navHeader ul li{
+    color: #fafafa;
+    list-style: none;
+    padding: 1em;
+}
+
+.navHeader ul li:hover{
+   border-bottom: solid;
+   border-bottom-color: #fafafa;
+}
+
+
+.navHeader ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-size: 10vh;
+}
+
+.imgLogo{
+    height:80px;
+    width:80px;
+}
+
+.imgLogo img{
+    height: 100%;
+    width: 100%;
+position: relative;
+
+}
+header div{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ color: #fff;
+    align-items: center;
+}
+
+header div p {
+    font-size: 3em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+}
+main h3{
+    text-transform: capitalize;
+    color: brown;
+}
+
+
+.imgFeauture{
+    max-height: 250px;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+main img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 2em;
+}
+main div{
+    padding: 0 .5em .5em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 0.5em;
+    border: 1px #c4c4be solid;
+    margin: 5px;
+}
+
+
+
+.BotonRead{
+    border: none;
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: #f1970e;
+    color:white;
+    border-radius: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+.BotonRead:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.Suscripcion{
+    background-image: url(img/contacus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 70vh;
+}
+.DivDatos{
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;     
+    opacity: 0.6;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: .8em;
+}
+
+
+.DivDatos div:nth-child(1){
+    height: 100%;
+    width: 70%;
+    margin-left: 6em;
+}
+.DivDatos form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.DivDatos form label{
+    padding: 0;
+    margin: 0;
+}
+.DivDatos form input{
+    border-radius: 6px;
+    height: 3em;
+border-bottom-style: none;
+}
+.DivDatos form #comment{
+    height: 8em;
+}
+.DivDatos div:nth-child(2){
+    position: relative;
+    top: 1em;
+    padding: 1em;
+    height: 90%;
+    border-radius: 10px;
+    background: rgba(88, 70, 70, 0.3);
+}
+
+.ContactUs {
+ font-size: 1.5em;   
+}
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    background: #291717;
+    color: white;
+    justify-content: space-around;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
