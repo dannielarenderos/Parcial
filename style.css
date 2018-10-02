@@ -121,6 +121,7 @@ main div{
 }
 
 .BotonRead{
+box-sizing: border-box;
     border: none;
     padding: 2em;
     margin-bottom: 2em;
@@ -139,55 +140,58 @@ main div{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    height: 70vh;
-}
-.DivDatos{
-    color: white;
-    position: relative;
-    width: 100%;
-    height: 100%;     
-    opacity: 0.8;
-    display: grid;
-    grid-template-columns: 45% 45%;
+    height: 100%;
 }
 
+
+.DivDatos{
+    box-sizing: border-box;
+    padding: 10%;
+    color: white;
+    width: 100%;
+    height: 100%;     
+    display: grid;
+    padding: 5%;
+
+    grid-template-columns: 50% 50%;
+}
+
+.ContactUs
+ {
+    border-radius: 10%;
+    opacity: 0.8;
+background-image: #b18af0;
+
+}
 
 ::placeholder {
     font-size: 1.5em;
 }
 
-.DivDatos div:nth-child(1){
-    height: 100%;
-    width: 70%;
-    margin-left: 6em;
-}
-.DivDatos form{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.BotonContact{
+    box-sizing: border-box;
+        border: none;
+        margin-bottom: 2em;
+        background-color: #f1970e;
+        color:white;
+        border-radius: 0.5em;
+        width: 100%;
+        text-align: center;
+    }
+    .BotonContact:hover{
+        opacity: 0.5;
+    }
 
-}
-.DivDatos form label{
-    padding: 0;
-    margin: 0;
-}
-.DivDatos form input{
-    border-radius: 6px;
-    height: 3em;
-border-bottom-style: none;
-}
+
+
+
+
 .DivDatos form #comment{
-    height: 8em;
+    
+    width: 100%;
+    height: 6em;
 }
-.DivDatos div:nth-child(2){
-    position: relative;
-    top: 1em;
-    padding: 1em;
-    height: 90%;
-    border-radius: 10px;
-    background: rgba(88, 70, 70, 0.3);
-}
+
 
 
 footer{
@@ -212,17 +216,54 @@ footer ul li a{
         grid-template-columns: 50% 50%;
     }
 
-
+    ::placeholder {
+        font-size: 0.5em;
+    }
 
 
 }
 
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 3.5em;
+        font-size: 2em;
     }
 
+    .DivDatos{
+        display: block;
+        position: relative;
+        display: grid;
+        grid-template-columns: 100%;
+        color: #000000;
+    }
+    
+    .Texto 
+    {
+        margin-bottom: 1em;
+        align-items: center;
+        align-content: center;
+    }
 
+    .DivDatos form #comment{
+        height: 3em;
+    }
+    
+    .ContactUs
+ {
+    color: #fff;
+    border-radius: 10px;
+    background: rgba(180, 37, 37, 0.3);
+    backface-visibility: 0.3;
+}
+}
 
+@media only screen and (max-width: 320px) {
+    .DivDatos{
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+    }
 
+    header
+    {
+        font-size: 2em;
+    }
 }
